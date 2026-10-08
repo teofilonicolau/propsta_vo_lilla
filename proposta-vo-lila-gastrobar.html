@@ -1,0 +1,187 @@
+<title>Proposta Vó Lila Gastrobar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
+<style>
+/* Layout: página única, coluna central, tabela de preços como peça principal.
+   Paleta estimada a partir do Instagram (fundo marrom-escuro, creme, dourado queimado). */
+:root {
+  --bg: #1d1510;
+  --surface: #2a1f18;
+  --fg: #f3ead8;
+  --muted: #b7a58c;
+  --accent: #c9873a;
+  --line: #4a3a2c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 48px 72px;
+}
+.logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
+.logo-sub {
+  font-size: 11px;
+  letter-spacing: 0.45em;
+  color: var(--muted);
+  margin-top: 6px;
+}
+h1, h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0;
+}
+h1 { font-size: 34px; margin-top: 40px; }
+h2 { font-size: 24px; margin-top: 48px; color: var(--accent); }
+p { margin: 12px 0 0; max-width: 62ch; }
+.lead { font-size: 16px; color: var(--muted); }
+.rule { height: 1px; background: var(--line); margin-top: 40px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+th, td {
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+th {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+td.num, th.num { text-align: right; white-space: nowrap; }
+.price { font-family: "Cormorant Garamond", Georgia, serif; font-size: 22px; font-weight: 600; color: var(--fg); }
+.price small { font-family: "Montserrat", sans-serif; font-size: 12px; color: var(--muted); font-weight: 300; }
+.table-wrap { overflow-x: auto; }
+.note { font-size: 13px; color: var(--muted); margin-top: 12px; }
+.pill {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 4px 10px;
+  margin-top: 8px;
+}
+ul { padding-left: 18px; margin: 12px 0 0; }
+li { margin-top: 6px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.card {
+  background: var(--surface);
+  padding: 22px;
+}
+.card h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.card .price { margin-top: 10px; }
+@media (max-width: 480px) {
+  .logo { font-size: 36px; }
+  h1 { font-size: 28px; }
+  th, td { padding: 12px 8px; }
+}
+</style>
+
+<div class="wrap">
+  <p class="logo">vó lila</p>
+  <p class="logo-sub">GASTROBAR</p>
+
+  <h1>Proposta de presença digital</h1>
+  <p class="lead">Ajuste do Perfil da Empresa no Google, site próprio com cardápio e pedido direto, e manutenção mensal. Valores para revisão antes de enviar ao cliente.</p>
+
+  <div class="rule"></div>
+
+  <h2>Investimento</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th class="num">Implantação</th>
+          <th class="num">Mensal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Meu Negócio: nome, categorias, descrição, catálogo, atributos, fotos e 1 post por semana</td>
+          <td class="num"><span class="price">R$ 500</span></td>
+          <td class="num"><span class="price">R$ 150</span> <small>/mês</small></td>
+        </tr>
+        <tr>
+          <td>Site próprio: cardápio em texto, perguntas frequentes, pedido e WhatsApp, medição</td>
+          <td class="num"><span class="price">R$ 900</span></td>
+          <td class="num"><span class="price">a definir</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Domínio (cerca de R$ 40 a R$ 80 por ano) e hospedagem ficam por conta do cliente. Os valores de hospedagem variam conforme o provedor.</p>
+
+  <h2>O que está incluso</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Google Meu Negócio</h3>
+      <ul>
+        <li>Nome padronizado, sem palavras extras</li>
+        <li>Categorias e descrição orientada a serviço</li>
+        <li>Atributos completos e fotos atualizadas</li>
+        <li>Um post por semana com pedido ou reserva</li>
+        <li>Plano de troca de nome com o dono no controle</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Site próprio</h3>
+      <ul>
+        <li>Cardápio em texto, por categoria, com preço</li>
+        <li>Botão de pedido para o Anota AI e de WhatsApp</li>
+        <li>Perguntas frequentes com marcação</li>
+        <li>Endereço, horário e mapa iguais ao Google</li>
+        <li>Medição de cliques em pedido e WhatsApp</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Pontos de atenção</h2>
+  <ul>
+    <li>A troca do nome no Google pode gerar nova verificação e, em casos raros, suspensão. O dono faz a alteração na própria conta, em um dia de pouco movimento.</li>
+    <li>O Google não tem mais a seção de perguntas e respostas. As respostas que o cliente precisa ficam no site.</li>
+    <li>Os números do Anota AI precisam estar ativos no horário comercial para o botão de pedido funcionar.</li>
+    <li>Resultados no Google dependem de fatores fora do nosso controle. Não garantimos posição.</li>
+  </ul>
+
+  <h2>Forma de pagamento e prazo</h2>
+  <p>Implantação de R$ 500 e R$ 900 na aprovação, e mensalidade a partir do segundo mês. Prazo estimado de 4 semanas para o pacote completo.</p>
+
+  <div class="rule"></div>
+  <p class="note">Valores de referência. Preços de mercado para sites em 2026 variam de R$ 2.000 a R$ 50.000 com desenvolvedores e agências; uma landing page simples fica na faixa inferior dessa escala.</p>
+</div>
